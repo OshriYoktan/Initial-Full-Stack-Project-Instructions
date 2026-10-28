@@ -180,3 +180,10 @@ Loading spinner on the first load, an empty state ("No items yet"), an error sta
    - Backend: `dotnet restore`, set the connection string, `dotnet ef migrations add InitialCreate`, `dotnet ef database update`, `dotnet run`.
    - Frontend: `npm create vite@latest <name> -- --template react`, `npm i axios @mui/material @mui/icons-material @emotion/react @emotion/styled react-hook-form yup @hookform/resolvers @reduxjs/toolkit react-redux`, set `.env`, `npm run dev`.
 4. A short "talking points" list I can use to explain to the interviewer: where AsNoTracking is used and why, how concurrency (RowVersion → 409) works, how double-click is prevented (disabled button + ref lock + idempotency key + unique index), how stale requests are cancelled, and why the architecture is split into Controller / Interface / Repository / DTO / Mapper on the backend and api / services / slices / hooks / components / pages on the frontend.
+5. dont leave any comments or anything useless because it needs to be ready to production and to show it to the intetviewer
+6.dont make things over engineering and overkill i want it simple as possible so i can explain
+7. dont add a readme file or anything that is not neceesary i want only the useful files to make it quick and as fast as possible
+8. dont use this attributes [ProducesResponseType] im not familiar with those
+9. use the idempotency and or race condition only if needed and its must
+10. instead of dates format and more folders and files use moment library its easier
+11. at the end, explain in hebrew about the flow and how i should explain them about the project
